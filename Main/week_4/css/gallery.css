@@ -1,0 +1,102 @@
+.gallery_template {
+    width: 100%;
+    min-width: 650px;
+    padding: 50px 0px 50px;
+}
+
+.input_place{
+    background-color: aliceblue;
+    height: 50px;
+    width: 100%;  
+    min-width: 650px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input_block{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_file{
+    font-size: 17px;
+}
+
+.input_src{
+    font-size: 18px;
+}
+
+.img_src{
+    width: 73%;
+    height: 22px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+
+.gallery{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img{
+    flex-basis: 19.5%;
+    flex-grow: 1;
+    aspect-ratio: 16 / 9;
+    min-width: 210px;
+    padding: 2px;
+}
+
+
+
+.focus{
+    background-color: rgba(129, 128, 128, 0.9);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3
+}
+
+.img_focus{
+    width: 70vw;
+    height: 90vh;
+    object-fit: contain;
+}
+
+.btn{
+    background-color: transparent;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    position: absolute;
+}
+
+.btn:hover{
+    color: rgb(218, 218, 218);
+}
+
+.btn_close{
+    top: 10px;
+    right: 25px
+}
+
+.btn_back{
+    left: 20px;
+}
+
+.btn_next{
+    right: 35px;
+}

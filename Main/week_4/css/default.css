@@ -1,0 +1,56 @@
+body{
+    width: 99vw;
+    height: 100vh;
+    min-width: 650px;
+    margin: 0px;
+}
+
+.nav{
+    background-color: rgb(90 86 86);
+    height: 60px;
+    width: 100%;
+    min-width: 650px;
+    position: fixed;
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav_item{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav_item .nav_input{
+    width: 70%;
+    height: 30%;
+    padding: 0px 7px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn_swap{
+    height: 60%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn_swap:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+.calculator_template{
+    display: flex;
+    /* Flex */
+}
+
+.gallery_template{
+    display: none;
+    /* Block */
+}
