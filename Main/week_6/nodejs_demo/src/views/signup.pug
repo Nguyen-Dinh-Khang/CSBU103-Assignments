@@ -1,0 +1,22 @@
+extend layout.pug 
+block content
+    div(class='container d-flex justify-content-center align-items-center')
+        div(class='box')
+            p(class='title') Sign up
+            form(action="" method='POST' class='input_form')
+                div(class='input_box')
+                    label(for='input1' class='label') Username: 
+                    input(type='text' class='input username' id='input1' spellcheck="false" placeholder='email format')
+                div(class='input_box')
+                    label(for='input2' class='label') Password: 
+                    input(type='password' class='input password1' id='input2' spellcheck="false" placeholder='6-15 length, at least 1 number and 1 special character')
+                div(class='input_box')
+                    label(for='input3' class='label') Confirm password: 
+                    input(type='password' class='input password2' id='input3' spellcheck="false" placeholder='6-15 length, at least 1 number and 1 special character')
+            div(class='err')
+            div(class='message')
+             
+            button(class='button') Create
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src='/static/signup.js'></script>

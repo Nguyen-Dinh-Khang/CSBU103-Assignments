@@ -1,0 +1,44 @@
+[
+  {
+    "id": "b1818b2a-0196-49a8-a502-a2b3b8203080",
+    "username": "chuongdlb",
+    "password": "password123",
+    "name": "Chương Đặng",
+    "gender": "male",
+    "created": "2023-10-01T12:00:00Z"
+  },
+  {
+    "id": "a2718b2a-0196-49a8-a502-a2b3b8203081",
+    "username": "janedoe",
+    "password": "password456",
+    "name": "Jane Doe",
+    "gender": "female",
+    "created": "2023-10-02T12:00:00Z"
+  },
+  {
+    "id": "c3718b2a-0196-49a8-a502-a2b3b8203082",
+    "username": "johndoe",
+    "password": "password789",
+    "name": "John Doe",
+    "gender": "male",
+    "created": "2023-10-03T12:00:00Z"
+  },
+  {
+    "id": "dfa93a8a-7a4c-4c1d-9de9-1c1032cd6b43",
+    "newUser": {
+      "id": "6cd124f7-f8e8-42cf-b3d3-8c04371c1524",
+      "username": "khang",
+      "password": "123456"
+    },
+    "created": "2025-11-30T09:17:06.595Z"
+  },
+  {
+    "id": "3846fddd-8089-4fa2-bd6c-ca88c4f6a4b0",
+    "newUser": {
+      "id": "44871efd-d9c8-4a9f-b211-d67b3cc1cde0",
+      "username": "khang@gmail.com",
+      "password": "123456^"
+    },
+    "created": "2025-12-01T15:24:52.458Z"
+  }
+]
