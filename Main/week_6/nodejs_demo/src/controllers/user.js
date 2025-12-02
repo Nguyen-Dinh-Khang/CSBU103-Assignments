@@ -98,12 +98,11 @@ router.post('/create', async function(req, res) {
 
         // Create new user
         const newUser = {
-        id: uuid(),
         username: username,
         password: password
         }
 
-        await UserModel.insertUser({newUser})
+        await UserModel.insertUser(newUser)
         return res.json({ message: 'Sign up succesfully' })
     }
     catch(error) {
@@ -146,12 +145,15 @@ router.put('/:userId', async function (req, res) {
 })
 
 router.post('/login', async function(req, res) {
+//   console.log('----------------------------------------------------Có chạy----------------------------------------------------')  
   const { username, password } = req.body     
     try {
+        // console.log(username, password)
         const user = await UserModel.findUserByUsername(username)
         // FAIL-FAST 
         console.log({ user });
         
+        // console.log(user.username, username, user.password, password)
         if(!user || user.username !== username || user.password !== password) throw new Error('Unauthorized access')
         req.session.loggedIn = true
         res.redirect('/')

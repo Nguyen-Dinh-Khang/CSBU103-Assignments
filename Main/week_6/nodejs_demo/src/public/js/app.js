@@ -11,7 +11,7 @@ $(document).ready(function () {
         if (!userId) {
             $.ajax({
                 method: "POST",
-                url: "http://localhost:3000/users",
+                url: "http://localhost:3000",
                 data: JSON.stringify(formData),
                 contentType: 'application/json',
                 encode: true,
@@ -28,7 +28,7 @@ $(document).ready(function () {
                         console.log(userId)
                         $.ajax({
                             method: "DELETE",
-                            url: `http://localhost:3000/users/${userId}`,
+                            url: `http://localhost:3000/${userId}`,
                             contentType: 'application/json',
                             encode: true,
                         }).done(function (resp) {
@@ -55,7 +55,7 @@ $(document).ready(function () {
         } else {
             $.ajax({
                 method: "PUT",
-                url: `http://localhost:3000/users/${userId}`,
+                url: `http://localhost:3000/${userId}`,
                 data: JSON.stringify(formData),
                 contentType: 'application/json',
                 encode: true,
@@ -73,7 +73,7 @@ $(document).ready(function () {
                         const updatedUserId = $(this).attr('data-id')
                         $.ajax({
                             method: "DELETE",
-                            url: `http://localhost:3000/users/${userId}`,
+                            url: `http://localhost:3000/${userId}`,
                             contentType: 'application/json',
                             encode: true,
                         }).done(function (resp) {
@@ -155,7 +155,7 @@ $(document).ready(function () {
         console.log(userId)
         $.ajax({
             method: "DELETE",
-            url: `http://localhost:3000/users/${userId}`,
+            url: `http://localhost:3000/${userId}`,
             contentType: 'application/json',
             encode: true,
         }).done(function (resp) {

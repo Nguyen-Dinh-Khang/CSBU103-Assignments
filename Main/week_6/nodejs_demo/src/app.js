@@ -3,7 +3,7 @@ const path = require('path')
 var cookieParser = require("cookie-parser")
 var session = require("express-session")
 const app = express()
-const UserController = require('./controllers/user') 
+const UserController = require('./controllers/user.js') 
 
 
 
