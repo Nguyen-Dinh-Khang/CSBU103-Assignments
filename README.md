@@ -1,2 +1,2 @@
-Week 2 and 4: use go live 
-Week 6: npm run dev
+- Week 2 and 4: use go live 
+- Week 6: npm run dev
