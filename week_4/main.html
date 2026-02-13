@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+
+    <title>Week 4</title>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="nav_item">
+            <label for="nav_input">Input:&nbsp;</label>
+            <input id="nav_input" type="text" class="nav_input">    
+        </div>
+
+        <div class="nav_item">
+            <div class="time"></div>
+        </div>
+
+        <button class="btn_swap">Gallery</button>
+    </div>
+
+
+
+    <!-- Calculation -->
+    <div class="calculator_template">
+        <div class="calculator_frame">
+            <div class="calculator_screen">
+                <div class="expression"></div>
+                <div class="result"></div>
+            </div>
+
+            <div class="calculator_nodes">
+                <button class="calculator_node" onclick="Calculator('(')">
+                    (
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator(')')">
+                    )
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('del')">
+                    Del
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('ac')">
+                    Ac
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('**')">
+                    ^
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('*/')">
+                    <div class="rational"></div>
+                    <div class="rational"></div>
+                </button>
+
+                <button class="calculator_node" onclick="Calculator('pi')">
+                    pi
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('%')">
+                    %
+                </button>
+
+                <button class="calculator_node" onclick="Calculator('9')">
+                    9
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('8')">
+                    8
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('7')">
+                    7
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('/')">
+                    / 
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('6')">
+                    6
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('5')">
+                    5
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('4')">
+                    4
+                </button>
+
+                <button class="calculator_node" onclick="Calculator('*')">
+                    x
+                </button>
+                                    
+                <button class="calculator_node" onclick="Calculator('3')">
+                    3
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('2')">
+                    2
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('1')">
+                    1
+                </button> 
+
+                <button class="calculator_node" onclick="Calculator('-')">
+                    -
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('ans')">
+                    Ans
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('0')">
+                    0
+                </button>
+                
+                <button class="calculator_node" onclick="Calculator('calculator')">
+                    =
+                </button>
+
+                <button class="calculator_node" onclick="Calculator('+')">
+                    +
+                </button>
+            </div>
+        </div>   
+    </div>
+    <!--  -->
+
+
+    <!-- Gallery -->
+    <div class="gallery_template">
+        <div class="input_place">
+            <div class="input_block input_file">
+                <input type="file" class="img_file">
+            </div>
+            <div class="input_block input_src">
+                <label for="img_src">Link:&nbsp;</label>
+                <input type="text" class="img_src" id="img_src">
+            </div>
+        </div>
+
+        <!-- Special zone -->
+        <div class="focus">
+            <button class="btn btn_close">X</button>
+            <button class="btn btn_back"><</buton>
+            <button class="btn btn_next">></button>
+        </div>
+        <!--  -->
+
+        <div class="gallery">
+            
+        </div>
+    </div>
+    <!--  -->
+
+    <script src="./functions/change_function.js"></script>
+    <script src='./functions/calculator.js'></script>
+    <script type="module" src="./functions/gallery.js"></script>
+</body>
+</html>
